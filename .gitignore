@@ -49,3 +49,12 @@ Thumbs.db
 
 #gradle
 .gradle/
+
+# benchmarks output folders #
+#############################
+blocks/
+depots/
+gripper/
+logistics/
+sokoban/
+
