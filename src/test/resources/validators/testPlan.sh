@@ -90,7 +90,7 @@ function run_benchmarks() {
 # Run HSP Planner
 function solveHSP() {
     echo "# Plan ${problem_name}"
-
+    timeout 60 \
     java \
         -Xms${XM} \
         -Xmx${XM} \
