@@ -1,0 +1,36 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+
+parsing domain file "domain.pddl" done successfully
+parsing problem file "p31.pddl" done successfully
+# WARNING: Unable to attach Serviceability Agent. Unable to attach even with module exceptions: [org.openjdk.jol.vm.sa.SASupportException: Sense failed., org.openjdk.jol.vm.sa.SASupportException: Sense failed., org.openjdk.jol.vm.sa.SASupportException: Sense failed.]
+
+problem instantiation done successfully (510 actions, 151 fluents)
+
+* Starting ASTAR search with MAX heuristic 
+* ASTAR search succeeded
+
+found plan as follows:
+
+00: (      load-truck package1 truck4 city4-1) [0]
+01: (drive-truck truck4 city4-1 city4-2 city4) [0]
+02: (    unload-truck package1 truck4 city4-2) [0]
+03: (drive-truck truck1 city1-1 city1-2 city1) [0]
+04: (     fly-airplane plane1 city2-2 city4-2) [0]
+05: (      load-truck package3 truck1 city1-1) [0]
+06: (   load-airplane package1 plane1 city4-2) [0]
+07: (     fly-airplane plane1 city4-2 city3-2) [0]
+08: (      load-truck package2 truck1 city1-2) [0]
+09: ( unload-airplane package1 plane1 city3-2) [0]
+10: (    unload-truck package2 truck1 city1-1) [0]
+11: (    unload-truck package3 truck1 city1-2) [0]
+
+time spent:       0.03 seconds parsing 
+                  0.17 seconds encoding 
+                 17.35 seconds searching
+                 17.55 seconds total time
+
+memory used:      0.98 MBytes for problem representation
+                 52.81 MBytes for searching
+                 53.79 MBytes total
+
+

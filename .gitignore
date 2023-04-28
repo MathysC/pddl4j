@@ -52,9 +52,4 @@ Thumbs.db
 
 # benchmarks output folders #
 #############################
-blocks/
-depots/
-gripper/
-logistics/
-sokoban/
 

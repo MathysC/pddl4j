@@ -1,0 +1,27 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+Problem file does not exist
+Usage:
+
+HSP [-hV] [-e=<heuristic>] [-l=<logLevel>] [-t=<timeout>] [-w=<weight>]
+    <domain> <problem>
+
+Description:
+
+Solves a specified planning problem using A* search strategy.
+
+Parameters:
+      <domain>              The domain file.
+      <problem>             The problem file.
+
+Options:
+  -l, --log=<logLevel>      Set the level of trace of the planner: ALL, DEBUG,
+                              INFO, ERROR, FATAL, OFF, TRACE (preset INFO).
+  -t, --timeout=<timeout>   Set the time out of the planner in seconds (preset
+                              600s).
+  -w, --weight=<weight>     Set the weight of the heuristic (preset 1.0).
+  -e, --heuristic=<heuristic>
+                            Set the heuristic : AJUSTED_SUM, AJUSTED_SUM2,
+                              AJUSTED_SUM2M, COMBO, MAX, FAST_FORWARD,
+                              SET_LEVEL, SUM, SUM_MUTEX (preset: FAST_FORWARD)
+  -h, --help                Show this help message and exit.
+  -V, --version             Print version information and exit.

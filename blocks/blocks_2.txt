@@ -1,0 +1,34 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+
+parsing domain file "domain.pddl" done successfully
+parsing problem file "p002.pddl" done successfully
+# WARNING: Unable to attach Serviceability Agent. Unable to attach even with module exceptions: [org.openjdk.jol.vm.sa.SASupportException: Sense failed., org.openjdk.jol.vm.sa.SASupportException: Sense failed., org.openjdk.jol.vm.sa.SASupportException: Sense failed.]
+
+problem instantiation done successfully (40 actions, 29 fluents)
+
+* Starting ASTAR search with MAX heuristic 
+* ASTAR search succeeded
+
+found plan as follows:
+
+00: (unstack b c) [0]
+01: ( put-down b) [0]
+02: (unstack c a) [0]
+03: ( put-down c) [0]
+04: (unstack a d) [0]
+05: (  stack a b) [0]
+06: (  pick-up c) [0]
+07: (  stack c a) [0]
+08: (  pick-up d) [0]
+09: (  stack d c) [0]
+
+time spent:       0.04 seconds parsing 
+                  0.07 seconds encoding 
+                  0.01 seconds searching
+                  0.12 seconds total time
+
+memory used:      0.18 MBytes for problem representation
+                  0.01 MBytes for searching
+                  0.19 MBytes total
+
+

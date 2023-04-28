@@ -1,0 +1,24 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+
+parsing domain file "domain.pddl" done successfully
+parsing problem file "p13.pddl" done successfully
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.stream.Collectors.toList(Collectors.java:280)
+	at fr.uga.pddl4j.parser.Expression.<init>(Expression.java:128)
+	at fr.uga.pddl4j.problem.FinalizedProblem.normalizeAction(FinalizedProblem.java:838)
+	at fr.uga.pddl4j.problem.FinalizedProblem.finalizeActions(FinalizedProblem.java:593)
+	at fr.uga.pddl4j.problem.DefaultProblem.finalization(DefaultProblem.java:320)
+	at fr.uga.pddl4j.problem.AbstractProblem.instantiate(AbstractProblem.java:444)
+	at fr.uga.pddl4j.planners.statespace.HSP.instantiate(HSP.java:163)
+	at fr.uga.pddl4j.planners.AbstractPlanner.solve(AbstractPlanner.java:406)
+	at fr.uga.pddl4j.planners.AbstractPlanner.call(AbstractPlanner.java:487)
+	at fr.uga.pddl4j.planners.AbstractPlanner.call(AbstractPlanner.java:46)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at fr.uga.pddl4j.planners.statespace.HSP.main(HSP.java:176)

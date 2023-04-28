@@ -1,0 +1,27 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+
+parsing domain file "domain.pddl" done successfully
+parsing problem file "p33.pddl" done successfully
+# WARNING: Unable to attach Serviceability Agent. Unable to attach even with module exceptions: [org.openjdk.jol.vm.sa.SASupportException: Sense failed., org.openjdk.jol.vm.sa.SASupportException: Sense failed., org.openjdk.jol.vm.sa.SASupportException: Sense failed.]
+
+problem instantiation done successfully (915 actions, 204 fluents)
+
+* Starting ASTAR search with MAX heuristic 
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.stream.StreamSupport.stream(StreamSupport.java:69)
+	at java.base/java.util.Collection.stream(Collection.java:743)
+	at fr.uga.pddl4j.planners.statespace.search.AStar.search(AStar.java:108)
+	at fr.uga.pddl4j.planners.statespace.search.AbstractStateSpaceSearch.searchSolutionNode(AbstractStateSpaceSearch.java:279)
+	at fr.uga.pddl4j.planners.statespace.AbstractStateSpacePlanner.solve(AbstractStateSpacePlanner.java:266)
+	at fr.uga.pddl4j.planners.AbstractPlanner.solve(AbstractPlanner.java:432)
+	at fr.uga.pddl4j.planners.AbstractPlanner.call(AbstractPlanner.java:487)
+	at fr.uga.pddl4j.planners.AbstractPlanner.call(AbstractPlanner.java:46)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at fr.uga.pddl4j.planners.statespace.HSP.main(HSP.java:176)
